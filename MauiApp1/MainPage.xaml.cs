@@ -16,7 +16,7 @@ namespace MauiApp1
 
         private void OnGenerateClicked(object sender, EventArgs e)
         {
-            var data = $"{InputText.Text}-{count++}"; // Ajoute un suffixe unique aux données pour les rendre différentes à chaque génération
+            var data = $"{InputText.Text}-{count++}"; // Ajoute un suffixe unique aux données pour les rendre différentes à chaque génération OK
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(data, QRCodeGenerator.ECCLevel.L);
